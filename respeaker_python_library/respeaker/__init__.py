@@ -1,5 +1,6 @@
 """
- ReSpeaker Python Library
+ReSpeaker Python Library
+_init_.py
 """
 
 from microphone import Microphone
