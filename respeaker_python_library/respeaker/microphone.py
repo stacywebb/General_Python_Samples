@@ -1,6 +1,6 @@
 """
- ReSpeaker Python Library
-
+ReSpeaker Python Library
+microphone.py
 """
 
 import Queue
