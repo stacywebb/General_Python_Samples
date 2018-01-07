@@ -1,6 +1,6 @@
 """
- DFT wrapper of FFTW3
-
+DFT wrapper of FFTW3
+fff.py
 """
 
 import array
