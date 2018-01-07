@@ -1,5 +1,6 @@
 """
- ReSpeaker Python Library
+ReSpeaker Python Library
+player.py
 """
 
 import threading
