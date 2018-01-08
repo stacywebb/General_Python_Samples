@@ -1,7 +1,7 @@
 ReSpeaker Python Library
 ========================
 
-ReSpeaker python library is an open source python library to provide basic functions of voice interaction.
+A python library to provide basic functions of voice interaction.
 
 It uses [PocketSphinx](https://github.com/cmusphinx/pocketsphinx) for keyword spotting and uses [webrtcvad](https://github.com/wiseman/py-webrtcvad) for voice activity detecting.
 
