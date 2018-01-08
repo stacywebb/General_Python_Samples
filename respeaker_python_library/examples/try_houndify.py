@@ -20,26 +20,11 @@ mic = None
 player = None
 
 
-def get_kickstarter_data():
-    KICKSTARTER_URL = "https://www.kickstarter.com/projects/search.json?search=&term=%22respeaker%22"
-
-    r = requests.get(KICKSTARTER_URL)
-    data_json = r.json()
-
-    if data_json:
-        project = data_json.get('projects')[0]
-        backers = project.get("backers_count")
-        pledged = project.get("usd_pledged")
-
-        print '%s backers, %s pledged' % (backers, pledged)
-
-        return backers, pledged
 
 
-def check_kickstarter():
-    backers, pledged = get_kickstarter_data()
-    print 'we have got %d backers and %s dollars.' % (int(backers), pledged)
-    return 'right now, we have got %d backers and raised %s dollars.' % (int(backers), pledged)
+def check_working():
+    print 'now we are cooking with fire.'
+    return 'now we are cooking with fire.'
 
 
 def play_music():
@@ -68,9 +53,9 @@ def task(quit_event):
                 print transcript
                 self.transcript = transcript
                 if not self.handler:
-                    if transcript.find('how many backers do we have') >= 0 or transcript.find(
-                            'how is our campaign going') >= 0 or transcript.find('where are we') >= 0:
-                        self.handler = check_kickstarter
+                    if transcript.find('are we cooking') >= 0 or transcript.find(
+                            'how is the food going') >= 0 or transcript.find('where are we') >= 0:
+                        self.handler = check_working
                     elif transcript.find('play music') >= 0:
                         self.handler = play_music
 
